@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quimovil</title>
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- font-awesom-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- fonts-->
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <!-- mystyles-->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/medias.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#">Quimovil</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Toma de Pedido<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Borradores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pedidos enviado</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Estado de pedido</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="head">
+      <div class="container-fluid text-center"><a class="float-left" href="clientes.html"><i class="fas fa-arrow-left"></i></a>
+        <p>458565</p>
+        <p>Alcimar Farm E.I.R.L. / BOTICA ALCIMARS</p>
+      </div>
+    </div>
+    <div class="nav-pedido">
+      <button class="tablink" id="defaultOpen" onclick="openCity('datos-comerciales', this )">DATOS COMERCIALES</button>
+      <button class="tablink" onclick="openCity('posiciones', this )">POSICIONES</button>
+    </div>
+    <div class="block-pedido">
+      <div class="tabcontent" id="datos-comerciales">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="back-form-detalle">
+              <form class="form">
+                <div class="form-group">
+                  <input class="form-group-input" type="text" required="">
+                  <label class="form-group-label">Area de venta</label>
+                  <div class="form-group-line"></div>
+                </div>
+                <div class="form-group">
+                  <input class="form-group-input" type="text" required="">
+                  <label class="form-group-label">Clase</label>
+                  <div class="form-group-line"></div>
+                </div>
+                <div class="form-group">
+                  <input class="form-group-input" type="text" required="">
+                  <label class="form-group-label">Destinatario:</label>
+                  <div class="form-group-line"></div>
+                </div>
+                <div class="form-group">
+                  <input class="form-group-input" type="text" required="">
+                  <label class="form-group-label">Vendedor:</label>
+                  <div class="form-group-line"></div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <input class="form-group-input" type="text" required="">
+                      <label class="form-group-label">Vend (ZR):</label>
+                      <div class="form-group-line"></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <input class="form-group-input" type="text" required="">
+                      <label class="form-group-label">Vend (ZR):</label>
+                      <div class="form-group-line"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <input class="form-group-input" type="text" required="">
+                    <label class="form-group-label">Centro:</label>
+                    <div class="form-group-line"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <input class="form-group-input" type="text" required="">
+                    <label class="form-group-label">Cod. de Pago:</label>
+                    <div class="form-group-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="btn-tdp"><a href="productos.html">AGREGAR PRODUCTOS</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabcontent" id="posiciones">
+        <div class="icon-add"><img src="img/icon-add.svg"></div>
+        <!--.empty-cart
+        h3 Agregar productos
+        img(src='img/cruz.svg')
+        -->
+        <div class="box-product">
+          <div class="delete float-right"><a href="#"><i class="fas fa-times"></i></a></div>
+          <div class="row">
+            <div class="col">
+              <div class="name">
+                <h6>465341 - ALIPRAC PV ORAL CAJ X 06</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <input class="form-group-input" type="text" required="">
+                <label class="form-group-label">Posición:</label>
+                <div class="form-group-line"></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <input class="form-group-input" type="text" required="">
+                <label class="form-group-label">Cantidad:</label>
+                <div class="form-group-line"></div>
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="icon-edit"><a href="editar-productos"><img src="img/icon-edit.svg"></a></div>
+            </div>
+            <div class="col total">
+              <p>Total: 300</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-posicion">
+          <p>Total Neto:     S/.600.00</p><a href="">GUARDAR</a><a href="">CONFIRMAR PEDIDO</a>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery , Bootstrap JS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- myjs-->
+    <script src="js/min.js"></script>
+  </body>
+</html>

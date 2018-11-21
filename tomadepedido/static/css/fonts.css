@@ -1,0 +1,56 @@
+
+@font-face{
+  font-family: "HelveticaNeue.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue.ttf");
+}
+@font-face{
+  font-family: "HelveticaNeue-Light.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue-Light.ttf");
+}
+
+@font-face{
+  font-family: "HelveticaNeue-Bold.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue-Bold.ttf");
+}
+@font-face{
+  font-family: "HelveticaNeue-Black.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue-Black.ttf");
+}
+@font-face{
+  font-family: "HelveticaNeue-Heavy.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue-Heavy.ttf");
+}
+@font-face{
+  font-family: "HelveticaNeue-Roman.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue-Roman.ttf");
+}
+@font-face{
+  font-family: "HelveticaNeue-Medium.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue-Medium.ttf");
+}
+@font-face{
+  font-family: "Gotham-Bold.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/Gotham-Bold.ttf");
+}
+@font-face{
+  font-family: "HelveticaNeue-Thin.ttf";
+  font-style:normal;
+  font-weight:normal;
+  src: url("fonts/HelveticaNeue-Thin.ttf");
+}

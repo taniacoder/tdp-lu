@@ -15,25 +15,7 @@ p {
   margin-bottom: 5px; }
 
 .txt-green {
-  color: #15707B;
-}
-
-ul.color-list{
-  list-style-type: none;
-  color: #666666;
-}
-
-.color-list li {
-  padding: 0 0px 8px;
-}
-.color-list li:nth-child(1) {
-  color: #B2B2B2;
-  margin-bottom: 12px;
-}
-
-#stock .col-3 {
-  padding: 0px;
-}
+  color: #15707B; }
 
 /*buscador*/
 .search {
@@ -426,6 +408,21 @@ div.cients-list {
     min-width: 153px;
     display: inline-block;
     text-decoration: none; }
+
+/*modal-lu*/
+ul.color-list {
+  list-style-type: none;
+  color: #666666; }
+
+.color-list li {
+  padding: 0 0px 8px; }
+
+.color-list li:nth-child(1) {
+  color: #B2B2B2;
+  margin-bottom: 12px; }
+
+#stock .col-3 {
+  padding: 0px; }
 
 /*****edetalle de pedido******/
 .nav-pedido {

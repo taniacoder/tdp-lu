@@ -4,7 +4,7 @@
     <title>Quimovil</title>
     <meta name="keywords" content="">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- font-awesom-->
@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="#">Quimovil</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light"><a class="navbar-brand" href="index.html">Quimovil</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -29,9 +29,11 @@
       </div>
     </nav>
     <div class="detalles-producto">
-      <div class="head-title">
-        <div class="container-fluid"><a class="float-left" href="clientes.html"><i class="fas fa-arrow-left"></i></a>
-          <h2>CONDICION COMERCIAL</h2>
+      <div id="head-subtitle">
+        <div class="container-fluid">
+          <div class="head"><a class="float-left txt-green" href="clientes.html"><i class="fas fa-arrow-left"></i></a>
+            <h2>  CONDICION COMERCIAL</h2>
+          </div>
         </div>
       </div>
       <div class="head-product">
@@ -41,48 +43,49 @@
               <h5>09098 GLUCERNA (TRIPLE CARE) PVO/SOL OR X900G</h5>
             </div>
             <div class="col-5">
-              <div class="icons-modal">
+              <div class="icons-modal float-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#stock"><img src="img/icon-stock.svg"></button>
                 <div class="modal fade" id="stock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
+                      <button class="close text-secondary" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                       <div class="modal-header">
                         <h5 class="modal-title titlemodal txt-green" id="exampleModalLabel">09098 <strong> - GLUCERNA (TRIPLE CARE) PVO/SOL OR X900G</strong></h5>
-                        <button class="close text-secondary" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
                       </div>
                       <div class="modal-body">
+                        <p class="txt-green">Stock por lote</p>
                         <div class="container">
                           <div class="row">
                             <div class="col-3">
                               <ul class="color-list">
                                 <li>Lote</li>
                                 <li>88305QU03</li>
-                                <li>007</li>
-                                <li>1.00</li>
+                                <li>88305QU03</li>
+                                <li>88305QU03</li>
                               </ul>
                             </div>
                             <div class="col-3">
                               <ul class="color-list">
                                 <li>Almacén</li>
-                                <li>88305QU03</li>
                                 <li>007</li>
-                                <li>1.00</li>
+                                <li>007</li>
+                                <li>0001</li>
                               </ul>
                             </div>
                             <div class="col-3">
                               <ul class="color-list">
                                 <li>Cantidad</li>
-                                <li>88305QU03</li>
-                                <li>007</li>
-                                <li>1.00</li>
+                                <li>1.000</li>
+                                <li>12.000</li>
+                                <li>181.000</li>
                               </ul>
                             </div>
                             <div class="col-3">
                               <ul class="color-list">
                                 <li>Fecha Ven.</li>
-                                <li>88305QU03</li>
-                                <li>007</li>
-                                <li>1.00</li>
+                                <li>05.2020</li>
+                                <li>12.2018</li>
+                                <li>05.2020</li>
                               </ul>
                             </div>
                           </div>
@@ -95,11 +98,68 @@
                 <div class="modal fade" id="regalo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
+                      <button class="close text-secondary" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                        <h5 class="modal-title titlemodal txt-green" id="exampleModalLabel">209098 <strong> - GLUCERNA (TRIPLE CARE) PVO/SOL OR X900G</strong></h5>
                       </div>
-                      <div class="modal-body">...</div>
+                      <div class="modal-body">
+                        <p class="txt-green">Plan comercial</p>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-3 pdl-5">
+                              <ul class="color-list">
+                                <li>Lote</li>
+                              </ul>
+                            </div>
+                            <div class="col-3">
+                              <ul class="color-list">
+                                <li>Promoción</li>
+                              </ul>
+                            </div>
+                            <div class="col-6">
+                              <ul class="color-list">
+                                <li>Descripción</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="row item-box">
+                            <div class="col-3">
+                              <p class="mg-20">6</p>
+                            </div>
+                            <div class="col-3">
+                              <p class="mg-20">6+1UN</p>
+                            </div>
+                            <div class="col-6">
+                              <p>Bonifi. Col INR[212129] - [PE18308358]</p>
+                              <p>Vig: Hasta: 2018/10/31</p>
+                            </div>
+                          </div>
+                          <div class="row item-box">
+                            <div class="col-3">
+                              <p class="mg-20">6</p>
+                            </div>
+                            <div class="col-3">
+                              <p class="mg-20">6+1UN</p>
+                            </div>
+                            <div class="col-6">
+                              <p>Bonifi. Col INR[212129] - [PE18308358]</p>
+                              <p>Vig: Hasta: 2018/10/31</p>
+                            </div>
+                          </div>
+                          <div class="row item-box">
+                            <div class="col-3">
+                              <p class="mg-20">6</p>
+                            </div>
+                            <div class="col-3">
+                              <p class="mg-20">6+1UN</p>
+                            </div>
+                            <div class="col-6">
+                              <p>Bonifi. Col INR[212129] - [PE18308358]</p>
+                              <p>Vig: Hasta: 2018/10/31</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -108,8 +168,8 @@
           </div>
         </div>
       </div>
-      <div class="form-comercial">
-        <div class="container">
+      <div class="container relative">
+        <div class="form-comercial">
           <form class="form">
             <div class="form-group">
               <input class="form-group-input" type="text" required="">

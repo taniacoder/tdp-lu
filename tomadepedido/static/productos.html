@@ -16,13 +16,12 @@
     <link href="css/medias.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <!-- Menu-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light"><a class="navbar-brand" href="index.html">Quimovil</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="#">Toma de Pedido<span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Borradores</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><img src="img/logoo-23.svg"></span></button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><a class="navbar-brand" href="index.html"> <img src="img/logoo-23.svg"></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active"><a class="nav-link" href="#">Toma de Pedido <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="Borrador.html">Borradores</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Pedidos enviado</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Estado de pedido</a></li>
         </ul>
@@ -30,9 +29,15 @@
     </nav>
     <div id="head-subtitle">
       <div class="container-fluid">
-        <div class="head"><a href="clientes.html"><i class="fas fa-arrow-left"></i></a>
-          <h2>DATOS DEL CLIENTE</h2>
-          <div class="icons-product"><img src="img/icon-edit-inactive.svg"><img src="img/icon-agregar.svg"></div>
+        <div class="row">
+          <div class="col-7">
+            <div class="head"><a href="clientes.html"><i class="fas fa-arrow-left"></i></a>
+              <h2>DATOS DEL CLIENTE</h2>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="icons-product float-right"><a href="editar-productos.html"><img src="img/icon-edit-inactive.svg"></a><a href="detallesdepedido.html"><img src="img/icon-agregar.svg"></a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,7 +57,7 @@
     <div id="products-list">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -62,19 +67,37 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
@@ -82,7 +105,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -92,19 +115,37 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
@@ -112,7 +153,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -122,19 +163,37 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
@@ -142,7 +201,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -152,19 +211,37 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
@@ -174,7 +251,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -184,19 +261,37 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
@@ -204,7 +299,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -214,19 +309,37 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
@@ -234,7 +347,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -244,19 +357,37 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
@@ -264,7 +395,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="block-prod">
               <div>
                 <div class="row">
@@ -274,22 +405,108 @@
                       <p>Linea: 011A -Abboutt Nutricional</p>
                     </div>
                   </div>
-                  <div class="col-2"><img src="img/regalo.svg"></div>
+                  <div class="pick-modal">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#regalo"><img src="img/regalo.svg"></button>
+                  </div>
                 </div>
                 <hr>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-4">
+                    <p>Dcto Tot R: 12.85%</p>
+                    <p>Dcto Q: 11.00%</p>
+                    <p>Dcto Tot: 22.44%</p>
+                  </div>
+                  <div class="col-3">
+                    <p>P Lista: 206.42</p>
+                    <p>P Final: 160.11</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="green-esmrld">Master pack: 16.0</p>
+                    <p>Cantidad <span>
+                        <input class="cant" type="text" style="width: 100%;"></span></p>
+                  </div>
+                </div>
+                <div class="row pdt-15">
+                  <div class="col-4">
                     <p>1119-0001</p>
                     <p>1201-0001</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Disp.: 273.0</p>
                     <p>Disp.: 273.0</p>
                   </div>
-                  <div class="col">
+                  <div class="col-4">
                     <p>Tránsito: 0.0 </p>
                     <p>Tránsito: 0.0 </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="regalo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button class="close text-secondary" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <div class="modal-header">
+            <h5 class="modal-title titlemodal txt-green" id="exampleModalLabel">209098 <strong> - GLUCERNA (TRIPLE CARE) PVO/SOL OR X900G</strong></h5>
+          </div>
+          <div class="modal-body">
+            <p class="txt-green">Plan comercial</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-3 pdl-5">
+                  <ul class="color-list">
+                    <li>Lote</li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="color-list">
+                    <li>Promoción</li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="color-list">
+                    <li>Descripción</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row item-box">
+                <div class="col-3">
+                  <p class="mg-20">6</p>
+                </div>
+                <div class="col-3">
+                  <p class="mg-20">6+1UN</p>
+                </div>
+                <div class="col-6">
+                  <p>Bonifi. Col INR[212129] - [PE18308358]</p>
+                  <p>Vig: Hasta: 2018/10/31</p>
+                </div>
+              </div>
+              <div class="row item-box">
+                <div class="col-3">
+                  <p class="mg-20">6</p>
+                </div>
+                <div class="col-3">
+                  <p class="mg-20">6+1UN</p>
+                </div>
+                <div class="col-6">
+                  <p>Bonifi. Col INR[212129] - [PE18308358]</p>
+                  <p>Vig: Hasta: 2018/10/31</p>
+                </div>
+              </div>
+              <div class="row item-box">
+                <div class="col-3">
+                  <p class="mg-20">6</p>
+                </div>
+                <div class="col-3">
+                  <p class="mg-20">6+1UN</p>
+                </div>
+                <div class="col-6">
+                  <p>Bonifi. Col INR[212129] - [PE18308358]</p>
+                  <p>Vig: Hasta: 2018/10/31</p>
                 </div>
               </div>
             </div>

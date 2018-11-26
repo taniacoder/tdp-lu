@@ -16,13 +16,12 @@
     <link href="css/medias.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <!-- Menu-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light"><a class="navbar-brand" href="index.html">Quimovil</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="#">Toma de Pedido<span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Borradores</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><img src="img/logoo-23.svg"></span></button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><a class="navbar-brand" href="index.html"> <img src="img/logoo-23.svg"></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active"><a class="nav-link" href="#">Toma de Pedido <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="Borrador.html">Borradores</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Pedidos enviado</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Estado de pedido</a></li>
         </ul>
@@ -182,9 +181,25 @@
               <div class="form-group-line"></div>
             </div>
             <div class="form-group">
-              <input class="form-group-input" type="text" required="">
-              <label class="form-group-label">Tipo de posicion</label>
-              <div class="form-group-line"></div>
+              <label class="form-group-label">Tipo de posición</label>
+              <select class="form-control form-group-input" id="tip_pos">
+                <option value="0"></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="customCheck1" type="checkbox">
+                  <label class="custom-control-label" for="customCheck1">
+                    <p>No condición venta</p>
+                  </label>
+                </div>
+              </div>
             </div>
             <div class="row">
               <div class="col">
@@ -229,7 +244,7 @@
               <label class="form-group-label">Precio forzado </label>
               <div class="form-group-line"></div>
             </div>
-            <div class="btn-edit-prod"><a href="#">CONTINUAR</a></div>
+            <div class="btn-backgrounb-green"><a href="detallesdepedido.html">CONTINUAR</a></div>
           </form>
         </div>
       </div>
